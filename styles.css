@@ -11,6 +11,11 @@
 
 }
 
+#levelChart {
+  margin-top: 40px;
+  height: 270px;
+
+}
 
 
 body {
@@ -49,6 +54,17 @@ body {
 }
 
 
+.lastRow {
+  margin-bottom: 80px;
+}
+
+.ct-series-a .ct-area, .ct-series-a .ct-slice-pie {
+    fill: rgb(64, 164, 223) !important;
+}
+
+.ct-area {
+    fill-opacity: .6 !important;
+}
 
 .quantity {
   position: absolute;
@@ -72,7 +88,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 60px;

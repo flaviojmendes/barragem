@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.css" integrity="sha256-9LTMv8m7lGlT/6BWOhGVBXqw/x1etp8Qc5sTSDEvo9Y=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.10.1/chartist.min.js" integrity="sha256-+G64aITI0UNsa7H5VVoqXsMALdixvpu5+nfg2UYVZZs=" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
 
 
@@ -35,7 +38,7 @@
         </div>
       </div>
 
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-md-center levelRow">
         <div class="col-lg-5">
           <div class="glass">
               <div class="water"></div>
@@ -44,12 +47,16 @@
               </div>
           </div>
         </div>
+        <div class="col-lg-5 align-bottom">
+            <div id="levelChart"><!-- Plotly chart will be drawn inside this DIV --></div>
+        </div>
+
       </div>
     </div>
 
     <div class="row justify-content-md-center">
       <div class="col-md-12 text-center">
-        <p class="reading">Última leitura <span class="date">carregando..</span> - <a href="http://www.adasa.df.gov.br/monitoramento/niveis-de-reservatorios/historico">ADASA</a></p>
+        <p class="reading">Última leitura <span class="date">carregando..</span> - Gráfico desde 10/11/2016 - <a href="http://www.adasa.df.gov.br/monitoramento/niveis-de-reservatorios/historico">ADASA</a></p>
       </div>
     </div>
 
@@ -67,14 +74,14 @@
     </div>
     <div class="row justify-content-md-center">
       <div class="col-lg-3 text-center">
-        <p class="source"><a href="https://www.caesb.df.gov.br/images/seca_DF/programacao-22-01-a-28-01.pdf" target="_blank">22/01 a 28/01/2017</a></p>
-      </div>
-      <div class="col-lg-3 text-center">
         <p class="source"><a href="https://www.caesb.df.gov.br/images/seca_DF/programacao-29-01-a-05-02.pdf" target="_blank">29/01 a 05/02/2017</a></p>
       </div>
+      <div class="col-lg-3 text-center">
+        <p class="source"><a href="http://atlas.caesb.df.gov.br/planorodizio/" target="_blank">Mapa Dinâmico</a></p>
+      </div>
 
 
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 text-center lastRow">
         <img src="df.jpg" style="width: 90px; box-shadow: 2px 2px 2px 2px #888888; margin-right: 5px;"/>
       </div>
     </div>
